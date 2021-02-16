@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="../../../../style.css">
+</head>
+
+<body>
+
+    <a href="#" class="previous">&laquo; Clique aqui para a voltar na tela anterior</a>
+    <a href="../2/2.html" class="next">Clique aqui para a próxima tela &raquo;</a>
+    <div class="container">
+
+        <img src="1.jpg" usemap="#Map" />
+
+        <map name="Map" id="Map">
+            <area alt="" title="" href="javascript:alert('Se você clicar em Sair você sairá da reunião');"
+                coords="435,47,534,98" shape="rect">
+        </map>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../../../jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+</body>
+
+</html>
